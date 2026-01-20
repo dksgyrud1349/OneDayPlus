@@ -7,33 +7,47 @@
 
 ## 🛠 Tech Stack
 
-### **Development Environment**
-![Spring Tool Suite](https://img.shields.io/badge/Spring_Tool_Suite-6DB33F?style=for-the-badge&logo=spring&logoColor=white)
+### **1. DBMS**
 ![Oracle 18c](https://img.shields.io/badge/Oracle_18c-F80000?style=for-the-badge&logo=oracle&logoColor=white)
+
+### **2. WAS (Web Container)**
 ![Apache Tomcat](https://img.shields.io/badge/Apache_Tomcat-F8DC75?style=for-the-badge&logo=apache-tomcat&logoColor=black)
+
+### **3. Programming**
+![Java](https://img.shields.io/badge/Java-007396?style=for-the-badge&logo=java&logoColor=white)
+![JSP/Servlet](https://img.shields.io/badge/Jsp%20%2F%20Servlet-007396?style=for-the-badge&logo=java&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+
+### **4. Framework**
+![Spring](https://img.shields.io/badge/Spring-6DB33F?style=for-the-badge&logo=spring&logoColor=white)
+![MyBatis](https://img.shields.io/badge/MyBatis-000000?style=for-the-badge&logo=mybatis&logoColor=white)
+![Tiles](https://img.shields.io/badge/Tiles-6DB33F?style=for-the-badge)
+![Spring Security](https://img.shields.io/badge/Spring_Security-6DB33F?style=for-the-badge&logo=spring-security&logoColor=white)
+
+### **5. Build 및 배포를 위한 형상 관리 도구**
 ![Maven](https://img.shields.io/badge/Apache_Maven-C71A36?style=for-the-badge&logo=apache-maven&logoColor=white)
+
+### **6. 형상관리**
 ![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
 
-### **Backend**
-![Java](https://img.shields.io/badge/Java_8-007396?style=for-the-badge&logo=java&logoColor=white)
-![Spring Framework](https://img.shields.io/badge/Spring_Framework-6DB33F?style=for-the-badge&logo=spring&logoColor=white)
-![Spring Security](https://img.shields.io/badge/Spring_Security-6DB33F?style=for-the-badge&logo=spring-security&logoColor=white)
-![MyBatis](https://img.shields.io/badge/MyBatis-000000?style=for-the-badge&logo=mybatis&logoColor=white)
-![JSP/Servlet](https://img.shields.io/badge/JSP%20%2F%20Servlet-007396?style=for-the-badge&logo=java&logoColor=white)
-
-### **Frontend**
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-![jQuery](https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white)
-![Bootstrap](https://img.shields.io/badge/Bootstrap-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white)
-![JSON](https://img.shields.io/badge/JSON-000000?style=for-the-badge&logo=json&logoColor=white)
-
-### **Libraries & Tools**
+### **7. Open API**
+![OpenBuilder](https://img.shields.io/badge/OpenBuilder-FFCD00?style=for-the-badge)
 ![FullCalendar](https://img.shields.io/badge/FullCalendar-2C3E50?style=for-the-badge&logo=calendar&logoColor=white)
 ![Apache ECharts](https://img.shields.io/badge/Apache_ECharts-AA0000?style=for-the-badge&logo=apache-echarts&logoColor=white)
 ![Highcharts](https://img.shields.io/badge/Highcharts-8085E9?style=for-the-badge&logo=chart&logoColor=white)
+
+### **8. 개발 툴 / 모델링 툴**
+![SQL Developer](https://img.shields.io/badge/SQL_Developer-F80000?style=for-the-badge&logo=oracle&logoColor=white)
+![Spring Tool Suite](https://img.shields.io/badge/STS-6DB33F?style=for-the-badge&logo=spring&logoColor=white)
 ![ERDCloud](https://img.shields.io/badge/ERDCloud-FF6B6B?style=for-the-badge)
+
+### **9. 기타**
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![jQuery](https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white)
+![Ajax](https://img.shields.io/badge/Ajax-000000?style=for-the-badge)
+![JSON](https://img.shields.io/badge/JSON-000000?style=for-the-badge&logo=json&logoColor=white)
+![Bootstrap](https://img.shields.io/badge/Bootstrap-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white)
 
 ---
 
@@ -60,7 +74,7 @@
     * 사용자 문의글에 대한 **답변 작성/수정/삭제** 및 부적절한 게시글 삭제 기능.
 
 ### 3. **관리자 (Admin)**
-* **클래스 거버넌스**:
+* **클래스 승인 거버넌스**:
     * 플랫폼 내 개설된 모든 원데이 클래스의 **승인 권한 관리**.
     * 클래스 상태를 **'대기', '승인', '보류', '취소'**로 동적 수정하여 노출 제어.
 
@@ -69,7 +83,7 @@
 ## 💡 핵심 구현 포인트
 * **데이터 정교화**: **MyBatis 동적 쿼리**를 활용하여 승인 상태 및 정렬 조건에 따른 유연한 데이터 필터링 구현.
 * **보안 및 권한**: **Spring Security**를 적용하여 사용자, 플러스, 관리자 간의 접근 권한을 엄격히 분리.
-* **UX 최적화**: **Tiles 3**를 이용한 레이아웃 공통화 및 **Ajax/JSON** 통신을 통한 비동기 데이터 처리.
+* **UX 최적화**: **Tiles**를 이용한 레이아웃 공통화 및 **Ajax/JSON** 통신을 통한 비동기 데이터 처리.
 
 ---
 
